@@ -6,16 +6,30 @@ class Program
     {
         int[] sortedArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-        int target = 6;
-        int result = BinarySearch(sortedArray, target);
-
-        if (result != -1)
+        Console.Write("Sorted Array Contents: ");
+        foreach (var element in sortedArray)
         {
-            Console.WriteLine($"Element {target} found at index {result}.");
+            Console.Write($"{element} ");
         }
+        Console.WriteLine(); // add a newline for better formatting
+
+        Console.Write("Enter the target element: ");
+        if (int.TryParse(Console.ReadLine(), out int target))
+        {
+            int result = BinarySearch(sortedArray, target);            
+
+            if (result != -1)
+            {
+                Console.WriteLine($"Element {target} found at index {result}.");
+            }
+            else
+            {
+                Console.WriteLine($"Element {target} not found in the array.");
+            }
+         }
         else
         {
-            Console.WriteLine($"Element {target} not found in the array.");
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
         }
     }
 
@@ -48,7 +62,7 @@ class Program
             }
         }
 
-        // If we reach here, the element was not present
+        // if we reach here, the element was not present
         return -1;
     }
 }
