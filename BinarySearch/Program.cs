@@ -4,6 +4,9 @@ class Program
 {
     static void Main()
     {
+        // Clear the console screen!
+        Console.Clear();
+
         int[] sortedArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         Console.Write("Sorted Array Contents: ");
@@ -62,10 +65,9 @@ class Program
             }
         }
 
-        // if we reach here, the element was not present
+        // if we reach here, the element was not present!
         return -1;
+
+        // Will add output to file
     }
 }
-
-
-// In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array.
