@@ -1,2 +1,2 @@
 # csharp_programs
-Enclosed are my programs alongside some coding exercises for practice.
+Here are my C# programs alongside some coding exercises for practice.
