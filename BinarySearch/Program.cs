@@ -71,3 +71,5 @@ class Program
         // Will add output to file
     }
 }
+
+//Binary search is a search algorithm used to find the position of a target value within a sorted array or list. It works by repeatedly dividing the search interval in half, reducing the portion of the data being searched, until the target value is found or the search interval is empty.
